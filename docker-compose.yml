@@ -13,3 +13,5 @@ services:
       - "8080:8080" #specify ports forewarding
     links:
       - mongodb # link this service to the database service
+    depends_on:
+      - mongodb
